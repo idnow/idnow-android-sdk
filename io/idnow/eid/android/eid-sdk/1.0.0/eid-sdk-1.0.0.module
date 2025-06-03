@@ -42,11 +42,11 @@
         {
           "name": "eid-sdk-1.0.0.aar",
           "url": "eid-sdk-1.0.0.aar",
-          "size": 1118911,
-          "sha512": "29546715b976bb794e9c511c3713b3a650a26ed3e4e6764a24586913e413056de6b583985f0065dbfd151bbdbbc5b2130f462650b156f27ec6c0d607ceb9f852",
-          "sha256": "4526d311ab55142eac6c3cad4c0b7ea9a76e0b6ebcb3d2cb3499b2c11f7796f7",
-          "sha1": "bd2e7812902e33eaac07208e163fbad6b72525f6",
-          "md5": "e05e8e991fa58b1e8b33a06983e9d3ed"
+          "size": 1118932,
+          "sha512": "91859bbf022a6b202df15d27a2e41108e42ebf4c927316e1ed0ef24eb11b12b790b34283b3eb71aa3b4466b42a8d6c24e4a9a6f2d980f97d1225c1bcf1b276ba",
+          "sha256": "10476c286d73b822fc3dac861977fe9d3baea5345ae8161350833638b01d0f8e",
+          "sha1": "9e8d4f322dbcd193b2cb0491bf9f85f9a529dd11",
+          "md5": "ec07bb40a4f666e9f3e5b94a60a0a93b"
         }
       ]
     },
@@ -190,11 +190,11 @@
         {
           "name": "eid-sdk-1.0.0.aar",
           "url": "eid-sdk-1.0.0.aar",
-          "size": 1118911,
-          "sha512": "29546715b976bb794e9c511c3713b3a650a26ed3e4e6764a24586913e413056de6b583985f0065dbfd151bbdbbc5b2130f462650b156f27ec6c0d607ceb9f852",
-          "sha256": "4526d311ab55142eac6c3cad4c0b7ea9a76e0b6ebcb3d2cb3499b2c11f7796f7",
-          "sha1": "bd2e7812902e33eaac07208e163fbad6b72525f6",
-          "md5": "e05e8e991fa58b1e8b33a06983e9d3ed"
+          "size": 1118932,
+          "sha512": "91859bbf022a6b202df15d27a2e41108e42ebf4c927316e1ed0ef24eb11b12b790b34283b3eb71aa3b4466b42a8d6c24e4a9a6f2d980f97d1225c1bcf1b276ba",
+          "sha256": "10476c286d73b822fc3dac861977fe9d3baea5345ae8161350833638b01d0f8e",
+          "sha1": "9e8d4f322dbcd193b2cb0491bf9f85f9a529dd11",
+          "md5": "ec07bb40a4f666e9f3e5b94a60a0a93b"
         }
       ]
     },
