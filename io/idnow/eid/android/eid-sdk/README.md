@@ -52,7 +52,7 @@ repositories {
 
     // Add this 1st repo containing the eID's framework.
     maven {
-         url = URI("https://raw.githubusercontent.com/idnow/idnow-android-sdk/main")
+         url = uri("https://raw.githubusercontent.com/idnow/idnow-android-sdk/main")
     }
     // Add this 2nd repo containing the Authada's provider. 
     maven {
