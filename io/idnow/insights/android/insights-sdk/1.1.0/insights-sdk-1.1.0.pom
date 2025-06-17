@@ -6,8 +6,8 @@
   <!-- that they should prefer consuming it instead. -->
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.idnow.insights</groupId>
-  <artifactId>idnow-android-insights-sdk</artifactId>
+  <groupId>io.idnow.insights.android</groupId>
+  <artifactId>insights-sdk</artifactId>
   <version>1.1.0</version>
   <packaging>aar</packaging>
   <dependencies>
