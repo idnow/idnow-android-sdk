@@ -1,0 +1,165 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.design-system.android",
+    "module": "sunflower",
+    "version": "1.2.12",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sunflower-1.2.12.aar",
+          "url": "sunflower-1.2.12.aar",
+          "size": 641836,
+          "sha512": "9d65b9ee12d50c1dec820ceced02ac23c3f79207237418fc4b41b31c45d9775d5b16bdf8f37e85035db4b08aefaa5d937f6fb2002b91871e655413ef992fd33f",
+          "sha256": "4e06d8fa38da71daea3b5a006a4f25dc1bfae3338703c5e49a9ce19cecdfb691",
+          "sha1": "86b80834c83adfee99185103deadbe370a058b5d",
+          "md5": "a1563ef598ba344c0fca59aaee451619"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sunflower-1.2.12.aar",
+          "url": "sunflower-1.2.12.aar",
+          "size": 641836,
+          "sha512": "9d65b9ee12d50c1dec820ceced02ac23c3f79207237418fc4b41b31c45d9775d5b16bdf8f37e85035db4b08aefaa5d937f6fb2002b91871e655413ef992fd33f",
+          "sha256": "4e06d8fa38da71daea3b5a006a4f25dc1bfae3338703c5e49a9ce19cecdfb691",
+          "sha1": "86b80834c83adfee99185103deadbe370a058b5d",
+          "md5": "a1563ef598ba344c0fca59aaee451619"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "sunflower-1.2.12-sources.jar",
+          "url": "sunflower-1.2.12-sources.jar",
+          "size": 143424,
+          "sha512": "80aba576cb640e3d304ad8ac65ace9f0f82e4477e21f704c0ac80bd39821f67be8545e18994c3554b271fd5fa2e56337715742498a00ddf57b64b76b4d80444e",
+          "sha256": "bd12fad98f5413ba9ff4a42f03336da528c5e523e74732e677b0e067eb1a0777",
+          "sha1": "9344c8f4425070fb76e9ebe7df8ab2dd2f720b1a",
+          "md5": "2c050c52d023ac9f3eaf42c342eae38c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "sunflower-1.2.12-javadoc.jar",
+          "url": "sunflower-1.2.12-javadoc.jar",
+          "size": 1217985,
+          "sha512": "504bff3a09facf8f6bf63902dd7102ab6631eb665f0df74826b8f92cf2bcc20b3406bd2c5595dd37967d8020fff5793612b0a5f8d6dc13417b207c51f46c3347",
+          "sha256": "6f87050b30ceeadf3d0d65ac9cd61d68b88ac04518359bdbb374e9a970bc2e84",
+          "sha1": "87df7f156c7398159ddc4f1efceb53b83c96fe10",
+          "md5": "b0cdaff8da63130606a9cedcea60cfca"
+        }
+      ]
+    }
+  ]
+}
