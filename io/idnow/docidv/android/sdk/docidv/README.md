@@ -53,7 +53,7 @@ Or if you use versions catalog, use the below lines:
 - in `libs.versions.toml` file:
 ```toml
 [versions]
-docidv="1.0.0"
+docidv="1.1.0"
 
 [libraries]
 idnow-docidv = { group = "io.idnow.docidv.android.sdk", name = "docidv",  version.ref="docidv" }
@@ -67,7 +67,7 @@ implementation(libs.idnow.docidv)
 #### NOTE: We also supply a special version of our SDK, which is a 1:1 copy of the main version, but it does not contain the FintecSystems SDK.
 ```toml
 [versions]
-docidv="1.0.0-no-fintec-XS2A"
+docidv="1.1.0-no-fintec-XS2A"
 ```
 
 ## Usage example
@@ -77,32 +77,32 @@ docidv="1.0.0-no-fintec-XS2A"
      * Initialize the IDnow SDK
      */
     private fun initSDK() {
-        val idnowConfig = IDnowConfig.Builder()
+        val idnowConfig = IDnowDocIDVConfig.Builder()
             .withLanguage("en") //set specific ISO language code
             .withHttpLogging(true)
             .build()
-        IDnowSDK.getInstance().initialize(this, idnowConfig)
+        IDnowDocIDV.getInstance().initialize(this, idnowConfig)
     }
 
     /**
      * Call this method after your backend generates the identToken
      */
     private fun startIdentification(identToken: String) {
-        IDnowSDK.getInstance().startIdent(identToken) { idnowResult ->
-            when (idnowResult.resultType) {
-                IDnowResult.ResultType.FINISHED -> {
+        IDnowSDK.getInstance().startIdent(identToken) { iDnowDocIDVResult ->
+            when (iDnowDocIDVResult.resultType) {
+                IDnowDocIDVResult.ResultType.FINISHED -> {
                     //ident completed successfully
                     handleIdentificationSuccess()
                 }
 
-                IDnowResult.ResultType.CANCELLED -> {
+                IDnowDocIDVResult.ResultType.CANCELLED -> {
                     //ident was canceled
-                    handleIdentificationCanceled(cancelReason = idnowResult.statusCode)
+                    handleIdentificationCanceled(cancelReason = iDnowDocIDVResult.statusCode)
                 }
 
-                IDnowResult.ResultType.ERROR -> {
+                IDnowDocIDVResult.ResultType.ERROR -> {
                     //ident has an error
-                    handleIdentificationError(errorCode = idnowResult.statusCode)
+                    handleIdentificationError(errorCode = iDnowDocIDVResult.statusCode)
                 }
             }
         }
@@ -200,7 +200,7 @@ Some components that rely on 3rd party technologies such as Biometric Liveness o
 
 ## SDK error codes
 
-In case of IDnowResult.ResultType.ERROR, the IDnowResult.getStatusCode() method returns one of the error codes below.
+In case of IDnowDocIDVResult.ResultType.ERROR, the IDnowDocIDVResult.getStatusCode() method returns one of the error codes below.
 
 ```
 "E100" --> Ident code syntax incorrect
