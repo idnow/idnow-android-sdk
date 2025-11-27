@@ -88,7 +88,7 @@ docidv="1.1.0-no-fintec-XS2A"
      * Call this method after your backend generates the identToken
      */
     private fun startIdentification(identToken: String) {
-        IDnowSDK.getInstance().startIdent(identToken) { iDnowDocIDVResult ->
+        IDnowDocIDV.getInstance().start(identToken) { iDnowDocIDVResult ->
             when (iDnowDocIDVResult.resultType) {
                 IDnowDocIDVResult.ResultType.FINISHED -> {
                     //ident completed successfully
@@ -212,6 +212,7 @@ In case of IDnowDocIDVResult.ResultType.ERROR, the IDnowDocIDVResult.getStatusCo
 "E150" --> Start ident failed; invalid response
 "E151" --> Start ident failed; server reachability
 "E152" --> Start ident failed; missing session key
+"E160" --> Process force closed
 "E170" --> Socket connection force closed
 "E171" --> Process force closed
 "E180" --> Missing application context
