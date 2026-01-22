@@ -1,4 +1,15 @@
 ## Changelog
+#### 1.2.0 - 22 Jan 2026
+- Accessibility Enhancements:
+  - Further progress toward full WCAG 2.1 compliance.
+  - More components updated for improved accessibility.
+  - Liveness now accessible across multiple backend vendor options.
+- Design & Customization
+  - Configurable design themes tailored to customer requirements.
+  - Support for light and dark mode.
+  - Custom Lottie animations now supported.
+- Additional Improvements
+  - Functional and accessibility bug fixes • Stability enhancements • Overall UX refinements
 
 #### 1.1.0 - 18 Nov 2025
 - Screen redesign to comply with Android accessibility guidelines.
