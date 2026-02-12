@@ -1,4 +1,7 @@
 ## Changelog
+#### 1.3.0 - 12 Feb 2026
+ - Bugfixes and technical improvements.
+ - Country names are now translated into the set language correctly during the country selection on OTP screen
 #### 1.2.0 - 22 Jan 2026
 - Accessibility Enhancements:
   - Further progress toward full WCAG 2.1 compliance.
