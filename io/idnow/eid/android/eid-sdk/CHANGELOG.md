@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2026-02-19
+### Fixed
+- Remove logs.
+
 ## [1.1.1] - 2026-01-12
 ### Fixed
 - TLS Pinning.
