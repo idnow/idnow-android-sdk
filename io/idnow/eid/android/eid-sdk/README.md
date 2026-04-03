@@ -144,10 +144,10 @@ When the SDK stops with an error, you have access to several types of errors fro
 ```kotlin
 sealed class EIDError {
     /** Session has been cancelled by user. */
-    data class Aborted(val reason: String? = null) : EIDError()
+    data class Aborted(val reason: AbortedReason, val message: String? = null) : EIDError()
 
-    /** Any API network error. */
-    data object NetworkError : EIDError()
+    /** Any API network Error. */
+    data class NetworkError(val reason: NetworkErrorReason? = null) : EIDError()
 
     /** NFC is not available on the device. */
     data object NfcNotAvailable : EIDError()
@@ -158,8 +158,8 @@ sealed class EIDError {
     /** Given token has already been completed. */
     data object TokenAlreadyCompleted : EIDError()
 
-    /** Internal error occurred during the session. */
-    data object InternalError : EIDError()
+    /** Internal Error occurred during the session. */
+    data class InternalError(val reason: InternalErrorReason? = null) : EIDError()
 
     /** The eID card is already blocked or user blocked it during the session. */
     data object CardBlocked: EIDError()
@@ -167,7 +167,10 @@ sealed class EIDError {
     /** The eID card is deactivated, authority needs to be contacted. */
     data object CardDeactivated: EIDError()
 
-    /** The scanned card is not compatible, faulty or expired. User should change or update their document. */
+    /** The eID card has been lost during capture. A new session can be restarted. Governikus only. */
+    data object CardLost: EIDError()
+
+    /** The scanned card is not compatible, faulty or expired. User should change or update its document */
     data object InvalidCard: EIDError()
 
     /** Timeout occurred during the scan session. */

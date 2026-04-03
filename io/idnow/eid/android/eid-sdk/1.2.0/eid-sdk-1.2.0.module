@@ -1,0 +1,235 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.eid.android",
+    "module": "eid-sdk",
+    "version": "1.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "authadaReleaseVariantAuthadaReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.13.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-sdk-1.2.0.aar",
+          "url": "eid-sdk-1.2.0.aar",
+          "size": 1352986,
+          "sha512": "2fccca93fd785951d7568044bd28e12a5b10e1c8a61170c2266accacea008dd37eb947941e7a74411659824104f6f01df29a6fc62185a12cb3e9f56ddeff04a7",
+          "sha256": "7c905cf32efd4438101b3faedfe9f38e5fe64e658b0f7b51676fc945cfd214d2",
+          "sha1": "5260eb8348ecf2236e6eb1cab344ce966f70be29",
+          "md5": "cf38bc62f3a4148779245ecf4d2caee2"
+        }
+      ]
+    },
+    {
+      "name": "authadaReleaseVariantAuthadaReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "de.authada.library",
+          "module": "aal",
+          "version": {
+            "requires": "4.24.4"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-jdk14"
+            }
+          ]
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.9.7"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.9.7"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment-ktx",
+          "version": {
+            "requires": "1.8.9"
+          }
+        },
+        {
+          "group": "io.idnow.design-system.android",
+          "module": "sunflower",
+          "version": {
+            "requires": "1.2.31"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.7.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.59.2"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.13.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-sdk-1.2.0.aar",
+          "url": "eid-sdk-1.2.0.aar",
+          "size": 1352986,
+          "sha512": "2fccca93fd785951d7568044bd28e12a5b10e1c8a61170c2266accacea008dd37eb947941e7a74411659824104f6f01df29a6fc62185a12cb3e9f56ddeff04a7",
+          "sha256": "7c905cf32efd4438101b3faedfe9f38e5fe64e658b0f7b51676fc945cfd214d2",
+          "sha1": "5260eb8348ecf2236e6eb1cab344ce966f70be29",
+          "md5": "cf38bc62f3a4148779245ecf4d2caee2"
+        }
+      ]
+    },
+    {
+      "name": "authadaReleaseVariantAuthadaReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "eid-sdk-1.2.0-javadoc.jar",
+          "url": "eid-sdk-1.2.0-javadoc.jar",
+          "size": 1163106,
+          "sha512": "486636ea3f1d63e5fed9875efef6995bac13d8ee1c9314579d3b152b1277f16f121355ec826208576d16ef9c3230b6f96c888425d771a11bcd47f7619fffb561",
+          "sha256": "7b0debfab3b0a3897887099f7fef3641f2f42fba870f31ad44a43bec7c0ece1d",
+          "sha1": "1295d9782c58d9b32e0282ce2fc9d59669d3f796",
+          "md5": "71e84b754b4bf76b786fa2ca4d6cd465"
+        }
+      ]
+    }
+  ]
+}

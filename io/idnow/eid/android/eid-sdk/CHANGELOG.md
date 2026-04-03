@@ -1,10 +1,17 @@
 # IDnow - eID SDK Changelog - Android
 
 All notable changes to this project will be documented in this file.
+## [1.2.0] - 2026-04-03
+### Added
+- Prepare future support of Governikus.
+- Update Aborted error to send the quitting reason and handle new error cases.
+### Fixed
+- Minor fixes on flow.
+- Multiple fixes and enhancements at the accessibility level.
 
 ## [1.1.2] - 2026-02-19
 ### Fixed
-- Remove logs.
+- Remove Authada network logs.
 
 ## [1.1.1] - 2026-01-12
 ### Fixed
