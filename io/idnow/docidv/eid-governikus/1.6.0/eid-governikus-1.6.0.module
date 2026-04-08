@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv",
+    "module": "eid-governikus",
+    "version": "1.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-governikus-1.6.0.aar",
+          "url": "eid-governikus-1.6.0.aar",
+          "size": 8283,
+          "sha512": "04bd1b5d7d8476ac9e87dd05315e09b1e0828f8d1374f2d067b3ce73c6971f2dff85120c27b3e4faa7d5ca3c51f2ef9eadfdaeaa2da12f2eb1d5a8229351aed1",
+          "sha256": "9e0280f83b8524f6bc9c308e0626ed8b5043df27c906546c0c78d976a8c9a8e9",
+          "sha1": "03e50a48aed38401d605ca4496ecc4facdf3adcf",
+          "md5": "f361321c60a65900090c2228a686bb82"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.idnow.docidv",
+          "module": "common",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment-ktx",
+          "version": {
+            "requires": "1.8.9"
+          }
+        },
+        {
+          "group": "io.idnow.docidv.android.sdk",
+          "module": "eid-light",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.governikus",
+          "module": "ausweisapp",
+          "version": {
+            "requires": "2.4.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-governikus-1.6.0.aar",
+          "url": "eid-governikus-1.6.0.aar",
+          "size": 8283,
+          "sha512": "04bd1b5d7d8476ac9e87dd05315e09b1e0828f8d1374f2d067b3ce73c6971f2dff85120c27b3e4faa7d5ca3c51f2ef9eadfdaeaa2da12f2eb1d5a8229351aed1",
+          "sha256": "9e0280f83b8524f6bc9c308e0626ed8b5043df27c906546c0c78d976a8c9a8e9",
+          "sha1": "03e50a48aed38401d605ca4496ecc4facdf3adcf",
+          "md5": "f361321c60a65900090c2228a686bb82"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv",
+    "module": "ai",
+    "version": "1.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ai-1.6.0.aar",
+          "url": "ai-1.6.0.aar",
+          "size": 5142,
+          "sha512": "2b54406bd7cc44a38572ef605feb58e2a5b927cdbeff42e325db8f7bb9c90dff76e762f255a245ba7c0c77fb80c93f3b01119dbc81255c63ee32bced16be276e",
+          "sha256": "97eb3d4138ed186f8856ef15317409db1067194603ac104ccc7fd9c0af90a187",
+          "sha1": "189d6674c7a7f45eb3d73c13499d903348422a8f",
+          "md5": "eae080f374c43578bf952612e0455d16"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.idnow.docidv",
+          "module": "common",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "io.idnow.docidv.android.sdk",
+          "module": "ai",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ai-1.6.0.aar",
+          "url": "ai-1.6.0.aar",
+          "size": 5142,
+          "sha512": "2b54406bd7cc44a38572ef605feb58e2a5b927cdbeff42e325db8f7bb9c90dff76e762f255a245ba7c0c77fb80c93f3b01119dbc81255c63ee32bced16be276e",
+          "sha256": "97eb3d4138ed186f8856ef15317409db1067194603ac104ccc7fd9c0af90a187",
+          "sha1": "189d6674c7a7f45eb3d73c13499d903348422a8f",
+          "md5": "eae080f374c43578bf952612e0455d16"
+        }
+      ]
+    }
+  ]
+}
