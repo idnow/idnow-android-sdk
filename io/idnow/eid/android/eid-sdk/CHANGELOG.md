@@ -1,6 +1,12 @@
 # IDnow - eID SDK Changelog - Android
 
 All notable changes to this project will be documented in this file.
+## [1.2.1] - 2026-04-21
+### Added
+- Updated certificate pinning to use the intermediate certificate.
+### Fixed
+- Fixed an issue where users could get stuck during the 5-pin flow.
+
 ## [1.2.0] - 2026-04-03
 ### Added
 - Prepare future support of Governikus.
