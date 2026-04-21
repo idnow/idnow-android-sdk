@@ -1,0 +1,222 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv.android.sdk",
+    "module": "eid-light",
+    "version": "1.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "lightReleaseVariantLightReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.13.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-light-1.2.1.aar",
+          "url": "eid-light-1.2.1.aar",
+          "size": 1352141,
+          "sha512": "e4af4f16cdb497a17ed5243d645805cafe2389eb847d1e7a25b8a66480f5d26a754fb176a92bf43f9a2b7471f3fb2f575633c60051c54e794cbbc95642d49383",
+          "sha256": "0104b0f00142e3df23a542b894a2f440660e34a3678cdd5d90d7f056ca7836c3",
+          "sha1": "2c47a6aca6189c0f7e1b4d7d1d62e5dbecf76740",
+          "md5": "1431273f4f70bcd23e5f669aea60d556"
+        }
+      ]
+    },
+    {
+      "name": "lightReleaseVariantLightReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment-ktx",
+          "version": {
+            "requires": "2.9.7"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui-ktx",
+          "version": {
+            "requires": "2.9.7"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment-ktx",
+          "version": {
+            "requires": "1.8.9"
+          }
+        },
+        {
+          "group": "io.idnow.design-system.android",
+          "module": "sunflower",
+          "version": {
+            "requires": "1.2.31"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.7.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.59.2"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.13.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eid-light-1.2.1.aar",
+          "url": "eid-light-1.2.1.aar",
+          "size": 1352141,
+          "sha512": "e4af4f16cdb497a17ed5243d645805cafe2389eb847d1e7a25b8a66480f5d26a754fb176a92bf43f9a2b7471f3fb2f575633c60051c54e794cbbc95642d49383",
+          "sha256": "0104b0f00142e3df23a542b894a2f440660e34a3678cdd5d90d7f056ca7836c3",
+          "sha1": "2c47a6aca6189c0f7e1b4d7d1d62e5dbecf76740",
+          "md5": "1431273f4f70bcd23e5f669aea60d556"
+        }
+      ]
+    },
+    {
+      "name": "lightReleaseVariantLightReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "eid-light-1.2.1-javadoc.jar",
+          "url": "eid-light-1.2.1-javadoc.jar",
+          "size": 1163109,
+          "sha512": "c1e50651cf8cb252fd056f3626ba1ce2b1f255014e739e779a51159b139a2fc8e23b498d9a7337018e28c09aa850c9696e1b355c1a3677063a401bb7a6e57efc",
+          "sha256": "4a5b809165ceab82f1cd8cd67070ee78a2ee9d1a6c1a5df8c80b1ef48fbe5471",
+          "sha1": "3c72b2218cadfb7023b6ce407f07afca086c6d8b",
+          "md5": "a6297fa920bcdb0f5f9cde33eb95260e"
+        }
+      ]
+    }
+  ]
+}
