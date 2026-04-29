@@ -1,0 +1,111 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv",
+    "module": "core",
+    "version": "1.7.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.idnow.docidv",
+          "module": "common",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-1.7.0.aar",
+          "url": "core-1.7.0.aar",
+          "size": 28797,
+          "sha512": "2d4c6fbbebf4aee9f3a9c657edbc21957df62be8ce12da06aa2090eb6e97996bbf61a309293ff04755d866815fdcc64606e72b3c8dc870b669a6ee75cbd68cac",
+          "sha256": "b1154c068b7538c49ba5aa9fe77987e995c38bc50f4c2d3e7bf9196cbe6e8892",
+          "sha1": "e4a06ad3287335b7f416ca31ddf0efccdb515901",
+          "md5": "2f150d20491fadfc3410b8dabcaf0c81"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-android",
+          "version": {
+            "requires": "4.1.1"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "common",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-1.7.0.aar",
+          "url": "core-1.7.0.aar",
+          "size": 28797,
+          "sha512": "2d4c6fbbebf4aee9f3a9c657edbc21957df62be8ce12da06aa2090eb6e97996bbf61a309293ff04755d866815fdcc64606e72b3c8dc870b669a6ee75cbd68cac",
+          "sha256": "b1154c068b7538c49ba5aa9fe77987e995c38bc50f4c2d3e7bf9196cbe6e8892",
+          "sha1": "e4a06ad3287335b7f416ca31ddf0efccdb515901",
+          "md5": "2f150d20491fadfc3410b8dabcaf0c81"
+        }
+      ]
+    }
+  ]
+}

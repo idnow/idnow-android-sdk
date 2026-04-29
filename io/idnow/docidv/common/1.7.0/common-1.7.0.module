@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv",
+    "module": "common",
+    "version": "1.7.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-1.7.0.aar",
+          "url": "common-1.7.0.aar",
+          "size": 28306,
+          "sha512": "7186b08fa9e2273af612a3e52bcee8e9d77900bcb32b1375ee4d7e87d20e9bcb7b80840d861843c929a570f343dd8bc563c002cb6766b40aacbb545e59bf4ee2",
+          "sha256": "6362eb7d1d1ab9a79da54b4a89cd85502a8821a6434f2993f66c88f6318f3fef",
+          "sha1": "f116a1ac9723aea847360b41518e3ab37d31cf48",
+          "md5": "8cbb68424b1fc947a9208f1a7ab897a2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.fragment",
+          "module": "fragment-ktx",
+          "version": {
+            "requires": "1.8.9"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-1.7.0.aar",
+          "url": "common-1.7.0.aar",
+          "size": 28306,
+          "sha512": "7186b08fa9e2273af612a3e52bcee8e9d77900bcb32b1375ee4d7e87d20e9bcb7b80840d861843c929a570f343dd8bc563c002cb6766b40aacbb545e59bf4ee2",
+          "sha256": "6362eb7d1d1ab9a79da54b4a89cd85502a8821a6434f2993f66c88f6318f3fef",
+          "sha1": "f116a1ac9723aea847360b41518e3ab37d31cf48",
+          "md5": "8cbb68424b1fc947a9208f1a7ab897a2"
+        }
+      ]
+    }
+  ]
+}

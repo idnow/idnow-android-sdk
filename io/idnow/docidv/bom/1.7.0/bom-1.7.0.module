@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.docidv",
+    "module": "bom",
+    "version": "1.7.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.idnow.docidv",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "ai",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "eid-governikus",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.idnow.docidv",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "ai",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "eid-governikus",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ]
+    }
+  ]
+}
