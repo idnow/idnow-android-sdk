@@ -1,5 +1,19 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.8.0] - 2026-06-09
+### Added
+- QES functionality for automated and hybrid flows.
+- For now QES feature supports IDnow QTSP only.
+### Fixed
+- Fixed few crashes and other minor issues preventing user to easily quit the flow.
+- Functional and accessibility bug fixes.
+
+## [1.7.0] - 2026-04-23
+### Added
+- Update eID Sdk version to 1.2.1
+### Fixed
+- Fixed an error with the 5 Pin flow
+
 ## [1.6.0] - 2026-03-25
 ### Added
 - Modular Architecture 

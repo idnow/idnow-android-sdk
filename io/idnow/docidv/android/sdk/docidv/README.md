@@ -125,7 +125,7 @@ In `libs.versions.toml`:
 
 ```
 [versions]
-docidv = "1.6.0"
+docidv = "1.8.0"
 
 [libraries]
 idnow-docidv-bom = { group = "io.idnow.docidv", name = "bom", version.ref = "docidv" }
@@ -155,7 +155,7 @@ Alternatively, without version catalog:
 ```
 dependencies {
     // Import the BOM
-    implementation platform('io.idnow.docidv:bom:1.6.0')
+    implementation platform('io.idnow.docidv:bom:1.8.0')
 
     // No need to specify versions
     implementation 'io.idnow.docidv:core'
