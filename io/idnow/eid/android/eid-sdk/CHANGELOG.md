@@ -1,11 +1,10 @@
 # IDnow - eID SDK Changelog - Android
 
 All notable changes to this project will be documented in this file.
-## [1.2.1] - 2026-04-21
-### Added
-- Updated certificate pinning to use the intermediate certificate.
+## [1.2.2] - 2026-06-11
 ### Fixed
-- Fixed an issue where users could get stuck during the 5-pin flow.
+- Fixed on potential crash happening when coming back on pin screens.
+- Remove back button and disable back action on success screen.
 
 ## [1.2.0] - 2026-04-03
 ### Added
