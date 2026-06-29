@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.idnow.nfcreader</groupId>
+  <artifactId>nfcreader</artifactId>
+  <versioning>
+    <latest>1.3.4-rc2</latest>
+    <versions>
+      <version>1.3.4-rc2</version>
+    </versions>
+    <lastUpdated>20260629123139</lastUpdated>
+  </versioning>
+</metadata>

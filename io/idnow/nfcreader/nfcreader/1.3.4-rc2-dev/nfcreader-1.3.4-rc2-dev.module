@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.nfcreader",
+    "module": "nfcreader",
+    "version": "1.3.4-rc2-dev",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "devReleaseApiElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "dev",
+        "mode": "dev",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-1.3.4-rc2-dev.aar",
+          "url": "nfcreader-1.3.4-rc2-dev.aar",
+          "size": 328513,
+          "sha512": "7d23faaddff4f6e64d15c3eea9128e72ed2ff91a4e26cf6a9dde09ff7a4e051082efd739f840b039f3b60c2db32d2609dca6d4c6129e9c6e973f0ead7189ac58",
+          "sha256": "6aa8c47f2c3d566b833ae3bd1f2d3122deaccc07800710a32ff75b8e7b92285e",
+          "sha1": "9da845d7dbcdda8516b596d088daa585fc58cbfc",
+          "md5": "ec390a2de83a95d130165565d9cf0261"
+        }
+      ]
+    },
+    {
+      "name": "devReleaseRuntimeElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "dev",
+        "mode": "dev",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.57.1"
+          }
+        },
+        {
+          "group": "org.jmrtd",
+          "module": "jmrtd",
+          "version": {
+            "requires": "0.8.1"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "5.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-1.3.4-rc2-dev.aar",
+          "url": "nfcreader-1.3.4-rc2-dev.aar",
+          "size": 328513,
+          "sha512": "7d23faaddff4f6e64d15c3eea9128e72ed2ff91a4e26cf6a9dde09ff7a4e051082efd739f840b039f3b60c2db32d2609dca6d4c6129e9c6e973f0ead7189ac58",
+          "sha256": "6aa8c47f2c3d566b833ae3bd1f2d3122deaccc07800710a32ff75b8e7b92285e",
+          "sha1": "9da845d7dbcdda8516b596d088daa585fc58cbfc",
+          "md5": "ec390a2de83a95d130165565d9cf0261"
+        }
+      ]
+    },
+    {
+      "name": "devReleaseSourcesElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "dev",
+        "mode": "dev",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      }
+    }
+  ]
+}
