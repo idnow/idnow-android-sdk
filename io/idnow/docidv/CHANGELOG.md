@@ -1,5 +1,11 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.10.0] - 2026-07-08
+### Added
+- Passport signature page extraction.
+### Fixed
+- Fix crash on bank transfer start when FR language was used.
+
 ## [1.8.0] - 2026-06-09
 ### Added
 - QES functionality for automated and hybrid flows.
