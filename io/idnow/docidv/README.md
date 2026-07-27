@@ -339,6 +339,8 @@ In case of `IDnowDocIDVResult.ResultType.ERROR`, the `IDnowDocIDVResult.getStatu
 
 * **E152** — Start ident failed; missing session key
 
+* **E154** — Start ident failed, Documents are missing and upload is disabled
+
 * **E160** — Process force closed
 
 * **E170** — Socket connection force closed

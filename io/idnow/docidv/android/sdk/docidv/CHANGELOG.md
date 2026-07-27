@@ -1,5 +1,9 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.11.0] - 2026-07-15
+### Added
+- Handle download of pdf in QES web flow.
+
 ## [1.10.0] - 2026-07-08
 ### Added
 - Passport signature page extraction.
