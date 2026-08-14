@@ -1,0 +1,78 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.trustplatform",
+    "module": "bom",
+    "version": "0.1.0-beta",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "common",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        },
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "core",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        },
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "docidv",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "common",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        },
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "core",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        },
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "docidv",
+          "version": {
+            "requires": "0.1.0-beta"
+          }
+        }
+      ]
+    }
+  ]
+}
