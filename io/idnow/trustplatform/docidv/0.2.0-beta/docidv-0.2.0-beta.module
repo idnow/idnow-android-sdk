@@ -1,0 +1,410 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.trustplatform",
+    "module": "docidv",
+    "version": "0.2.0-beta",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "externalReleaseVariantExternalReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "docidv-0.2.0-beta.aar",
+          "url": "docidv-0.2.0-beta.aar",
+          "size": 14096,
+          "sha512": "7a5e7e8fedfa8f52648600b4545a2fd15a9bf9fb7c8b940d225711accd89ffb12605d878c1bdd7fb4c8cc6e44c304501d1da840400486b56ad12527395514918",
+          "sha256": "68ca334b879a891d6d017e4fe7730f845e0dbfd4a95dad05f6265c424e934e60",
+          "sha1": "69a259f9dc59e7562e8fcd14bf4a6892725fb5bb",
+          "md5": "b4145817411bbb73a7d476e043fa7666"
+        }
+      ]
+    },
+    {
+      "name": "externalReleaseVariantExternalReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "common",
+          "version": {
+            "requires": "0.2.0-beta"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "bom",
+          "version": {
+            "requires": "1.8.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "core"
+        },
+        {
+          "group": "io.idnow.docidv",
+          "module": "ai",
+          "excludes": [
+            {
+              "group": "com.google.ai.edge.litert",
+              "module": "litert-support"
+            },
+            {
+              "group": "com.google.ai.edge.litert",
+              "module": "litert-support-api"
+            }
+          ]
+        },
+        {
+          "group": "com.google.ai.edge.litert",
+          "module": "litert-support-api",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "iddoc-connector",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "iddoc-connector",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "ReadID-core",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "ReadID-core",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "ReadID-MRZ",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "ReadID-MRZ",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "ReadID-NFC",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "ReadID-NFC",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "readid-ui-core",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "readid-ui-core",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "readid-ui-nfc",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "readid-ui-nfc",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.readid",
+          "module": "readid-ui-viz",
+          "version": {
+            "requires": "4.123.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "readid-ui-viz",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.11.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcpkix-jdk18on",
+          "version": {
+            "requires": "1.78.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.8.6"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-tflite-java",
+          "version": {
+            "requires": "16.5.0"
+          },
+          "excludes": [
+            {
+              "group": "org.tensorflow",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.sf.scuba",
+          "module": "scuba-sc-android",
+          "version": {
+            "requires": "0.0.26"
+          }
+        },
+        {
+          "group": "net.sf.scuba",
+          "module": "scuba-smartcards",
+          "version": {
+            "requires": "0.0.20"
+          }
+        },
+        {
+          "group": "edu.ucar",
+          "module": "jj2000",
+          "version": {
+            "requires": "5.2"
+          }
+        },
+        {
+          "group": "org.ejbca.cvc",
+          "module": "cert-cvc",
+          "version": {
+            "requires": "1.4.13"
+          },
+          "excludes": [
+            {
+              "group": "org.bouncycastle",
+              "module": "bcprov-jdk15on"
+            }
+          ]
+        },
+        {
+          "group": "org.jmrtd",
+          "module": "jmrtd",
+          "version": {
+            "requires": "0.8.6"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.preference",
+          "module": "preference-ktx",
+          "version": {
+            "requires": "1.2.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.5.2"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "barcode-scanning",
+          "version": {
+            "requires": "17.3.0"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "face-detection",
+          "version": {
+            "requires": "16.1.7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "docidv-0.2.0-beta.aar",
+          "url": "docidv-0.2.0-beta.aar",
+          "size": 14096,
+          "sha512": "7a5e7e8fedfa8f52648600b4545a2fd15a9bf9fb7c8b940d225711accd89ffb12605d878c1bdd7fb4c8cc6e44c304501d1da840400486b56ad12527395514918",
+          "sha256": "68ca334b879a891d6d017e4fe7730f845e0dbfd4a95dad05f6265c424e934e60",
+          "sha1": "69a259f9dc59e7562e8fcd14bf4a6892725fb5bb",
+          "md5": "b4145817411bbb73a7d476e043fa7666"
+        }
+      ]
+    }
+  ]
+}
