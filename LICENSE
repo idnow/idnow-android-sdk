@@ -1,0 +1,83 @@
+IDnow SDK LICENSE AGREEMENT
+
+This SDK License Agreement (this "License") governs Customer's use of IDnow
+Group's software development kit, including associated libraries, binaries,
+sample code, and documentation (the "SDK").
+
+1. Grant of License
+
+Subject to the terms of this License, IDnow grants Customer a limited,
+non-exclusive, non-transferable, time-bound and revocable right to install,
+integrate, and use the SDK solely for the purpose of incorporating IDnow's
+services into Customer's own applications in accordance with the Main Agreement
+(as defined below).
+
+2. Term
+
+The term of this License is tied to the term of the relevant service agreement
+(either directly with IDnow, or via an authorized reseller) for the
+corresponding IDnow services (the "Main Agreement"). It commences upon
+Customer's first access to the SDK and terminates automatically, without notice,
+upon expiration or termination of the Main Agreement for any reason. Upon
+termination, Customer shall immediately cease all use of the SDK and delete all
+copies from its systems and applications.
+
+3. Restrictions
+
+Unless otherwise agreed in writing between the parties, Customer shall not
+(a) sublicense, sell, rent, lease, or otherwise make the SDK available to any
+third party outside the scope of Customer's own applications; (b) modify,
+decompile, disassemble, or reverse engineer the SDK, except to the extent
+required by applicable law; or (c) use the SDK for any purpose other than as set
+out in Section 1.
+
+4. Resellers and Forwarding
+
+Customer may not forward, distribute, or otherwise make the SDK available to any
+reseller, partner, affiliate, or other third party for onward distribution,
+except with IDnow's prior express written consent. Where such consent is
+granted, IDnow may impose additional conditions on the forwarding party,
+including requiring that party to execute a separate license agreement with
+IDnow, and Customer remains responsible for that party's compliance with this
+License.
+
+5. Ownership
+
+The SDK and all related intellectual property rights shall vest in IDnow and
+remain the sole property of IDnow. No rights are granted other than those
+expressly stated in this License. Customer acknowledges that it has no right to
+access the source code.
+
+6. "As Is" Disclaimer
+
+To the extent permitted by applicable law, the SDK is provided "as is" and "as
+available," without warranty of any kind, express or implied, including without
+limitation any warranty of merchantability, fitness for a particular purpose, or
+non-infringement.
+
+7. Limitation of Liability
+
+IDnow's liability under or in relation to this License shall be limited to
+damages caused by willful misconduct or gross negligence, and to liability that
+cannot be lawfully excluded under applicable law (including bodily injury, fraud
+and fraudulent misrepresentation, and liability under applicable product
+liability law). Any other liability shall be excluded, including but not limited
+to special, indirect or consequential damages, loss of profits, revenues or loss
+of data.
+
+8. Variation and Notices
+
+IDnow may update the terms of this License from time to time by giving reasonable
+prior notice to Customer. Customer's continued use of the SDK and documentation
+following the deemed receipt and service of the notice shall constitute
+Customer's acceptance of the terms of this License, as amended from time to time.
+If Customer does not wish to accept the terms of the License (as varied),
+Customer must immediately stop using and accessing the SDK and documentation upon
+receipt of such notice.
+
+9. Entire Agreement
+
+This License constitutes the entire and sole agreement between the parties
+regarding Customer's use of the SDK and supersedes any prior or contemporaneous
+agreements and understandings on this subject-matter. This License exists
+independently of, and alongside, the Main Agreement.
