@@ -1,5 +1,11 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.12.0] - 2026-08-03
+### Added
+- Improved the handover experience between desktop and mobile.
+### Fixed
+- Fixed a crash when the app was force stopped by the system.
+
 ## [1.11.0] - 2026-07-15
 ### Added
 - Handle download of pdf in QES web flow.
