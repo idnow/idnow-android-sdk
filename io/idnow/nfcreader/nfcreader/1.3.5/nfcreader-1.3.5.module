@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.nfcreader",
+    "module": "nfcreader",
+    "version": "1.3.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "prodReleaseApiElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "prod",
+        "mode": "prod",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-1.3.5.aar",
+          "url": "nfcreader-1.3.5.aar",
+          "size": 328892,
+          "sha512": "a3c9609b63e5a3e02b95a1ffa5a66a8f3f306694f4ffb6d5694f2e849b39e7f46d3e205d698456e7c824196f672f46a61124beb32fbeed48103133d9311f5b26",
+          "sha256": "95abfc5d420b55a4df705e6ce25416107b0d35eaba4a3ccd390a64fc7e8351b4",
+          "sha1": "810aa093c5479de24c07b992fc374ca370de3329",
+          "md5": "22b1077a7471ed321991964c319668d5"
+        }
+      ]
+    },
+    {
+      "name": "prodReleaseRuntimeElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "prod",
+        "mode": "prod",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.dagger",
+          "module": "dagger",
+          "version": {
+            "requires": "2.57.1"
+          }
+        },
+        {
+          "group": "org.jmrtd",
+          "module": "jmrtd",
+          "version": {
+            "requires": "0.8.1"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "5.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-1.3.5.aar",
+          "url": "nfcreader-1.3.5.aar",
+          "size": 328892,
+          "sha512": "a3c9609b63e5a3e02b95a1ffa5a66a8f3f306694f4ffb6d5694f2e849b39e7f46d3e205d698456e7c824196f672f46a61124beb32fbeed48103133d9311f5b26",
+          "sha256": "95abfc5d420b55a4df705e6ce25416107b0d35eaba4a3ccd390a64fc7e8351b4",
+          "sha1": "810aa093c5479de24c07b992fc374ca370de3329",
+          "md5": "22b1077a7471ed321991964c319668d5"
+        }
+      ]
+    },
+    {
+      "name": "prodReleaseSourcesElements-published",
+      "attributes": {
+        "com.android.build.api.attributes.ProductFlavor:mode": "prod",
+        "mode": "prod",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      }
+    }
+  ]
+}
