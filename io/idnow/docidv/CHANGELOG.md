@@ -1,5 +1,15 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.13.0] - 2026-09-03
+### Added
+Update default colors and fonts to match new brand.
+Use custom tabs to display legal links instead of opening external browser.
+Display an error when documents for QES are missing.
+Add 16 Kb support to our tracking library.
+
+### Fixed
+Fix an issue where liveness could not start on the second ident.
+
 ## [1.12.0] - 2026-08-03
 ### Added
 - Improved the handover experience between desktop and mobile.
