@@ -5,6 +5,14 @@ All notable changes to the TrustPlatform Android SDK will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Updated IDnow DocIDV SDK from `1.8.0` to `1.12.0`.
+- Updated Sunflower design system from `1.2.33` to `1.2.34`.
+- Updated `litert-support-api` from `1.4.0` to `1.4.2` to align with the litert version used internally by the DocIDV SDK.
+
 ## [0.2.1-beta] - 2026-08-18
 
 - CI pipeline validation release. No functional changes.
