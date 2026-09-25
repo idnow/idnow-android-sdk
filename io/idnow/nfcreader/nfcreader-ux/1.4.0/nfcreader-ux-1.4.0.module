@@ -1,0 +1,189 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.nfcreader",
+    "module": "nfcreader-ux",
+    "version": "1.4.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "prodReleaseVariantProdReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.11.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-ux-1.4.0.aar",
+          "url": "nfcreader-ux-1.4.0.aar",
+          "size": 569982,
+          "sha512": "6693eaf5bea70e8447e0f3c0d5e46677a523f38acf05cc6be2e54e130bc1b382609dfb8866d608ce710aa1af1b958ee90b426fa7732408720c5b74c5e2c18d53",
+          "sha256": "a90e5720ba0be99c2a3479b4babf4b8db6d0cd96371825bd18a4820221519c29",
+          "sha1": "2a3ac20052441fde81adc3b7bf363d6a132b0d4d",
+          "md5": "c4dedc5aaa73909762c6e70da43613cc"
+        }
+      ]
+    },
+    {
+      "name": "prodReleaseVariantProdReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "io.idnow.nfcreader",
+          "module": "nfcreader",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-fragment",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "androidx.navigation",
+          "module": "navigation-ui",
+          "version": {
+            "requires": "2.9.2"
+          }
+        },
+        {
+          "group": "io.idnow.design-system.android",
+          "module": "sunflower",
+          "version": {
+            "requires": "2.0.4"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.6.7"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-bom",
+          "version": {
+            "requires": "4.1.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-core"
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-android"
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-androidx-navigation"
+        },
+        {
+          "group": "org.orbit-mvi",
+          "module": "orbit-core",
+          "version": {
+            "requires": "10.0.0"
+          }
+        },
+        {
+          "group": "org.orbit-mvi",
+          "module": "orbit-viewmodel",
+          "version": {
+            "requires": "10.0.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.11.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nfcreader-ux-1.4.0.aar",
+          "url": "nfcreader-ux-1.4.0.aar",
+          "size": 569982,
+          "sha512": "6693eaf5bea70e8447e0f3c0d5e46677a523f38acf05cc6be2e54e130bc1b382609dfb8866d608ce710aa1af1b958ee90b426fa7732408720c5b74c5e2c18d53",
+          "sha256": "a90e5720ba0be99c2a3479b4babf4b8db6d0cd96371825bd18a4820221519c29",
+          "sha1": "2a3ac20052441fde81adc3b7bf363d6a132b0d4d",
+          "md5": "c4dedc5aaa73909762c6e70da43613cc"
+        }
+      ]
+    }
+  ]
+}
