@@ -1,5 +1,18 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.14.0] - 2026-09-24
+### Added
+Email OTP: Users can now receive their one-time password via email in addition to SMS, choose their preferred delivery method upfront, and switch between SMS and email channels during the OTP step without restarting the session.
+Multiple document flow: The identification flow now supports multiple document types with a refreshed design.
+EU Citizen Card: Added recognition of the EU Citizen Card as a supported identity document type, with correct label display throughout the identification flow.
+Unsupported document screen: When a user presents a document type not supported or not allowed by the customer configuration, they now see a dedicated screen with clear guidance instead of a generic error.
+Greek language support: Greek (el) is now available for NFC and liveness steps.
+
+### Fixed
+Fixed an issue where users were unable to complete the liveness step in certain scenarios (Facetec component updated).
+Fixed an issue where the NFC Read ID step was not shown when required.
+
+
 ## [1.13.0] - 2026-09-03
 ### Added
 Update default colors and fonts to match new brand.
