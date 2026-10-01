@@ -1,5 +1,12 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.14.1] - 2026-09-30
+### Added
+This is a technical maintenance release with no user-facing changes.
+
+### Fixed
+Internal bug fixes and stability improvements.
+
 ## [1.14.0] - 2026-09-24
 ### Added
 Email OTP: Users can now receive their one-time password via email in addition to SMS, choose their preferred delivery method upfront, and switch between SMS and email channels during the OTP step without restarting the session.
