@@ -1,5 +1,9 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.15.0] - 2026-10-14
+### Added
+Add a new optional informational screen to help the user in some flows.
+
 ## [1.14.1] - 2026-09-30
 ### Added
 This is a technical maintenance release with no user-facing changes.
