@@ -1,0 +1,203 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.design-system.android",
+    "module": "sunflower",
+    "version": "2.0.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie-compose",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sunflower-2.0.6.aar",
+          "url": "sunflower-2.0.6.aar",
+          "size": 1406465,
+          "sha512": "3590b547e9e9ca6cfc196ba262ca0d28e01e61d7e184d7eb5daabbbb616dfc2f55df449f69bb7470d7577c2c82009a136dd7f2cdd626c7a53166733c6c699577",
+          "sha256": "1bd17618a805ab11248d5aa55405c0bb3c55abfbc2dbac54abd9d2545b43c9bc",
+          "sha1": "11da20def68beb4f69178531cc667e6413cd3a7c",
+          "md5": "fb6f9f9b1841c58d897d2661c5334ece"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.1.4"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.05.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "com.airbnb.android",
+          "module": "lottie-compose",
+          "version": {
+            "requires": "6.4.0"
+          }
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.9.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sunflower-2.0.6.aar",
+          "url": "sunflower-2.0.6.aar",
+          "size": 1406465,
+          "sha512": "3590b547e9e9ca6cfc196ba262ca0d28e01e61d7e184d7eb5daabbbb616dfc2f55df449f69bb7470d7577c2c82009a136dd7f2cdd626c7a53166733c6c699577",
+          "sha256": "1bd17618a805ab11248d5aa55405c0bb3c55abfbc2dbac54abd9d2545b43c9bc",
+          "sha1": "11da20def68beb4f69178531cc667e6413cd3a7c",
+          "md5": "fb6f9f9b1841c58d897d2661c5334ece"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "sunflower-2.0.6-sources.jar",
+          "url": "sunflower-2.0.6-sources.jar",
+          "size": 284567,
+          "sha512": "683b5213f54b9e63cd607e2abccba4ea0f5f234fe3c992b53be854d0984c80e11bb45ada318e555fb9a663827f0acb201a188a1ae81e9faf74449b3bc773661b",
+          "sha256": "b8bcd719ed249eb1d0e5ffd4ffdc5bc5f50f820f717a336a81572f4c2ab19432",
+          "sha1": "847ecd983576f98fff4cf090212f8cb47cc2e9d7",
+          "md5": "776b3075c327a8e00baa119654b504d9"
+        }
+      ]
+    }
+  ]
+}
