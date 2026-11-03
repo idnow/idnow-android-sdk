@@ -6,7 +6,7 @@ Integrate IDnow Trust Platform identity verification flows into your Android app
 
 | Requirement | Minimum version  |
 | ----------- | ---------------- |
-| Android API | 24 (Android 7.0) |
+| Android API | 28 (Android 9.0) |
 | Kotlin      | 2.x              |
 
 ## Installation
@@ -35,23 +35,28 @@ dependencies {
 }
 ```
 
-## Register for Results
+## Register for Events
 
-Call `TrustPlatformSession.registerForResult` in `onCreate()`, before the activity reaches `onStart()`:
+Call `TrustPlatformSession.registerForResult` in `onCreate()`, before the activity reaches `onStart()`. It returns a `TrustPlatformLauncher`; call `session.launch(config)` to open the SDK and `session.stop()` to close it without an event:
 
 ```kotlin
 class MainActivity : ComponentActivity() {
 
-    private lateinit var launcher: ActivityResultLauncher<TrustPlatformConfig>
+    private lateinit var session: TrustPlatformLauncher
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        launcher = TrustPlatformSession.registerForResult(this) { result ->
-            when (result) {
-                is TrustPlatformResult.Completed -> { /* verification succeeded */ }
-                is TrustPlatformResult.Cancelled -> { /* user cancelled */ }
-                is TrustPlatformResult.Failed    -> { /* result.message contains details */ }
+        session = TrustPlatformSession.registerForResult(this) { event ->
+            when (event) {
+                is TrustPlatformEvent.Progress -> { /* event.progress says what the current step is waiting for */ }
+                is TrustPlatformEvent.Completed -> {
+                    // The flow completed. Query your backend for the outcome.
+                    // See https://docs.eu.platform.idnow.io/docs/integration/get-session-results
+                }
+                is TrustPlatformEvent.Aborted -> { /* the session was aborted on the server */ }
+                is TrustPlatformEvent.Dismissed -> { /* the SDK closed before the flow ended; the session keeps running */ }
+                is TrustPlatformEvent.Failed -> { /* event.error contains details */ }
             }
         }
     }
@@ -80,7 +85,7 @@ Add the following to your `AndroidManifest.xml`:
 [Create a session](https://docs.eu.platform.idnow.io/docs/integration/create-session) via the API, then launch the SDK with the session token:
 
 ```kotlin
-launcher.launch(
+session.launch(
     TrustPlatformConfig(
         token = token,
         environment = TrustPlatformEnvironment.Production,
@@ -88,13 +93,19 @@ launcher.launch(
 )
 ```
 
-## Handle Results
+## Events
 
-| Variant           | When it occurs                               |
-| ----------------- | -------------------------------------------- |
-| `Completed`       | The user completed the verification flow     |
-| `Cancelled`       | The user cancelled the flow                  |
-| `Failed(message)` | The flow failed — `message` contains details |
+The handler runs on the main thread and receives `TrustPlatformEvent`s:
+
+| Event                               | Meaning                                                                                       |
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
+| `Progress(progress: StepProgress)`  | What the current step is waiting for; reported only when the value changes                    |
+| `Completed`                         | The flow finished                                                                             |
+| `Aborted`                           | The session was aborted on the server                                                         |
+| `Dismissed`                         | The SDK closed before the flow ended (for example the back button); the session keeps running |
+| `Failed(error: TrustPlatformError)` | The flow failed; `error.message` describes why, suitable for logging                          |
+
+Any number of `Progress` events are followed by at most one terminal event. `session.stop()` closes the SDK without ending the session and without sending an event.
 
 ## DocIDV Handler (Optional)
 

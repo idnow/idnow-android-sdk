@@ -1,0 +1,207 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.trustplatform",
+    "module": "core",
+    "version": "0.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "externalReleaseVariantExternalReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-0.5.0.aar",
+          "url": "core-0.5.0.aar",
+          "size": 274435,
+          "sha512": "8c87e4344cb2a31b5b97bcdc0c1d8f07e1ef91fcd43d16c166f3699b3963a3aa23de6bd29bed356850691ea96d0c39bf50c62872fd4c60345857408728cbec3e",
+          "sha256": "bc158145e58aceabfa214ec150015ec50e7d68b8d36690a94bea95253e650524",
+          "sha1": "c27de6438ca873d3dc1cd8246358faadb581dbcc",
+          "md5": "c97011724bf1967d84f876d9a9b6c60b"
+        }
+      ]
+    },
+    {
+      "name": "externalReleaseVariantExternalReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.09.00"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-graphics"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.webkit",
+          "module": "webkit",
+          "version": {
+            "requires": "1.17.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.19.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.14.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-kotlinx-serialization",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "io.idnow.trustplatform",
+          "module": "common",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "io.idnow.design-system.android",
+          "module": "sunflower",
+          "version": {
+            "requires": "1.2.34"
+          }
+        },
+        {
+          "group": "io.insert-koin",
+          "module": "koin-android",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-0.5.0.aar",
+          "url": "core-0.5.0.aar",
+          "size": 274435,
+          "sha512": "8c87e4344cb2a31b5b97bcdc0c1d8f07e1ef91fcd43d16c166f3699b3963a3aa23de6bd29bed356850691ea96d0c39bf50c62872fd4c60345857408728cbec3e",
+          "sha256": "bc158145e58aceabfa214ec150015ec50e7d68b8d36690a94bea95253e650524",
+          "sha1": "c27de6438ca873d3dc1cd8246358faadb581dbcc",
+          "md5": "c97011724bf1967d84f876d9a9b6c60b"
+        }
+      ]
+    }
+  ]
+}

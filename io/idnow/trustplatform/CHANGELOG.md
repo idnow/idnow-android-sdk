@@ -5,6 +5,30 @@ All notable changes to the TrustPlatform Android SDK will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0]
+
+### Changed
+
+- **Breaking:** `minSdk` raised from 24 to 28 (Android 9.0), because the Governikus eID module bundled with `:trustplatform-docidv` requires API 28. Integrators targeting Android 7.0–8.1 must raise their app's `minSdk` or stay on the previous SDK version.
+- **Breaking:** `TrustPlatformSession.registerForResult(activity, onEvent)` now takes a `(TrustPlatformEvent) -> Unit` handler and returns a `TrustPlatformLauncher` with `launch(config)` and `stop()`, instead of an `ActivityResultLauncher<TrustPlatformConfig>`.
+- A session aborted on the server is now reported as `TrustPlatformEvent.Aborted`, and closing the SDK before the flow ends (for example with the back button) as `TrustPlatformEvent.Dismissed`.
+
+### Added
+
+- `:trustplatform-docidv` now bundles the IDnow DocIDV Governikus module (`io.idnow.docidv:eid-governikus`), so German eID (Personalausweis) steps handled natively open instead of failing with `MissingModuleException`.
+- `TrustPlatformEvent.Progress(StepProgress)` reports what the current step is waiting for (`InProgress`, `EnduserInputNeeded`, `InManualReview`) whenever the value changes. Requires a Player version that sends `stepProgress` on `session-state`; with an older Player every step reports `InProgress`, so no progress events arrive.
+- `TrustPlatformLauncher.stop()` closes the SDK without ending the session and without sending an event.
+- `TrustPlatformLauncher.launch(config)` does nothing while a run of the same launcher is still active (also between `stop()` and the SDK closing), so a double tap cannot start a second run.
+
+### Removed
+
+- **Breaking:** `TrustPlatformResult`; use `TrustPlatformEvent`.
+- **Breaking:** `TrustPlatformError.Cancelled`; use `TrustPlatformEvent.Aborted` or `TrustPlatformEvent.Dismissed`.
+
+### Fixed
+
+- The WebView was reloaded only when the session URL changed, so a step that wrote no session state left the screen frozen. The SDK now sends a `session-refresh` message to the Player on every poll and the Player re-renders in place instead of reloading, which also removes the white flash between steps. Requires a Player version that handles `session-refresh`; with an older Player the URL-change reload remains the fallback.
+
 ## [0.4.1]
 
 ### Changed

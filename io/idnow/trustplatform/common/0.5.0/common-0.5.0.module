@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.trustplatform",
+    "module": "common",
+    "version": "0.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-0.5.0.aar",
+          "url": "common-0.5.0.aar",
+          "size": 12548,
+          "sha512": "470b3f3e65bd7ac48eb4403be1ee9c8b98c60401a35b01719e45251936bd91f136ffb15486758b3890dc96743cce18ce9f8cccf398cf9c413c3777ef406a7b4d",
+          "sha256": "4747ccdbb068b370a7764d28868f68f24141004733f0d2d9c72f8ddd7e4225ce",
+          "sha1": "cb9bbf30028325e4a10f788f82ac3966f4462a76",
+          "md5": "e6f8132a4c984a6d5316af28659caec0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-0.5.0.aar",
+          "url": "common-0.5.0.aar",
+          "size": 12548,
+          "sha512": "470b3f3e65bd7ac48eb4403be1ee9c8b98c60401a35b01719e45251936bd91f136ffb15486758b3890dc96743cce18ce9f8cccf398cf9c413c3777ef406a7b4d",
+          "sha256": "4747ccdbb068b370a7764d28868f68f24141004733f0d2d9c72f8ddd7e4225ce",
+          "sha1": "cb9bbf30028325e4a10f788f82ac3966f4462a76",
+          "md5": "e6f8132a4c984a6d5316af28659caec0"
+        }
+      ]
+    }
+  ]
+}
