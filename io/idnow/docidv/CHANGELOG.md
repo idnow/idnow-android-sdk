@@ -1,5 +1,10 @@
 ## IDnow - DocIDV SDK Changelog - Android
 
+## [1.19.0] - 2026-11-03
+### Fixed
+Smoother loading transition when starting a video identification.
+Fixed a black overlay appearing on the 'Activate NFC' screen on Android in dark mode.
+
 ## [1.15.0] - 2026-10-14
 ### Added
 Add a new optional informational screen to help the user in some flows.
