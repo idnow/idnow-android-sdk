@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.idnow.protect",
+    "module": "protect-signals",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "protect-signals-1.0.0.aar",
+          "url": "protect-signals-1.0.0.aar",
+          "size": 306923,
+          "sha512": "56d7598210424c335dd4010c15ca74b04f854860af60337eddcea3a0f2d3f79e55be527216b1771b2ba3bf8ae904684d1a9ff894ae4e06a893c51527bb30df4d",
+          "sha256": "26e16d5a664f9ca05004fd7b6bf21bef94444c191b19e6e1cfdaa2dd329dbaaf",
+          "sha1": "403bd6ad148bddc95f0f6cc3fbadbcac89ac4908",
+          "md5": "bad9c448af29a3a7551dac19f3b9254c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "com.securevale",
+          "module": "rasp-android",
+          "version": {
+            "requires": "0.7.1"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.material",
+              "module": "*"
+            },
+            {
+              "group": "androidx.appcompat",
+              "module": "*"
+            },
+            {
+              "group": "androidx.core",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "protect-signals-1.0.0.aar",
+          "url": "protect-signals-1.0.0.aar",
+          "size": 306923,
+          "sha512": "56d7598210424c335dd4010c15ca74b04f854860af60337eddcea3a0f2d3f79e55be527216b1771b2ba3bf8ae904684d1a9ff894ae4e06a893c51527bb30df4d",
+          "sha256": "26e16d5a664f9ca05004fd7b6bf21bef94444c191b19e6e1cfdaa2dd329dbaaf",
+          "sha1": "403bd6ad148bddc95f0f6cc3fbadbcac89ac4908",
+          "md5": "bad9c448af29a3a7551dac19f3b9254c"
+        }
+      ]
+    }
+  ]
+}
